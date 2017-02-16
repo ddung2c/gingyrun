@@ -1,0 +1,129 @@
+/* Setup background image and fonts for the page */
+body {
+	background: #909eab url("../img/gingybackground.jpg") no-repeat top;
+	font-size: 18 px;
+	line-height: 24 px;
+	font-family: 'Orbitron', sans-serif;
+	
+}
+
+.start a{
+	/*background-image: url("../img/gamestart.png");*/
+	background-color: #02870d;
+	color: #e81b14;
+	text-decoration: none;
+	font-size: 30px;
+	border: 3px red solid;
+	padding: 8px;
+	float: left;
+	margin: 28% 20% 0px 28%; 
+}
+
+h1{
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.about{
+	text-align: center;
+	border: 3px solid;
+	color: white;
+	float:left;
+	width:30%;
+	height: 400px;
+	margin: -29% 5% 0px 45%;
+	padding:15px;
+}
+
+nav ul {
+
+    /* remove default style for ul */ 
+    list-style: none; 
+    /* each ul should be in a block */
+    display: inline-block; 
+    /* expand to width of parent container */
+    width: 100%;               
+    /* should render on top of everything else */ 
+    z-index: 99;
+	background-color:#001e60;
+}
+
+/* hide all submenus. */
+nav ul ul {             
+  display: none;       
+}
+
+/* remove default margins and padding */
+/* for our body, ul and li elements   */
+/* you likely will want to remove     */
+/* defaults for other elements too    */
+/* in the future.                     */
+body, ul, li {
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+}
+
+/* let's float the elements so they appear */
+/* inline with relative positioning and as */
+/* far to the left as possible             */
+nav ul li {
+  float:left;           
+  position:relative;    
+  background:none;      
+}
+
+/* let's make each menu link have a nice     */
+/* padded box to live in. Let's also fix the */
+/* color of the displayed menu item.         */ 
+nav ul li a {                 
+  display: block;         
+  padding: 25px 40px;     
+  color: #fff;         
+  text-decoration: none;
+  margin-left: 2px solid black;
+  margin-right: 2px solid black;
+}
+
+/*a CSS pseudo class that will activate when the mouse is "hovering over a list item in
+the top level of the nav menu*/
+nav ul li:hover a {
+	background:#2e61d1;
+}
+
+/*Display a sub menu if we hover over a parent*/
+nav ul li:hover > ul{
+	display: block;
+}
+
+/*Remove float for sub menus and make them relatively positioned*/
+nav ul ul li {
+	float: none;
+	position: relative;
+}
+
+/*Remove our submenu from the normal flow of layout when the client draws the web pageuse absolut positioning*/
+nav ul ul {
+	background: #090e13;
+	border-radius: 0px;
+	position: absolute;
+}
+
+/*Position our submenus to the right of the sub menu drop down*/
+nav ul ul ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+/*Adjust the padding and color of a sub sub menu item*/
+nav ul ul li a {
+	padding: 15px 15px 15px 15px;
+	color: #fff;
+}
+
+/*change background color on a sub sub menu item when hover*/
+nav ul ul li a:hover {
+	background: #4b545f;
+}

@@ -1,0 +1,36 @@
+div#GingyBackground_back{
+	position: absolute;
+	width:3000px;
+	height:550px;
+	margin: auto;
+	background-image: url(../img/background.png);
+	
+	z-index:-5;
+}
+
+
+div#GingyBackground_mid{
+	position: absolute;
+	width:3000px;
+	height:550px;
+	margin: auto;
+	background-image: url(../img/mid_background.png);
+	z-index:-4;
+}
+div#GingyBackground_front{
+	position: absolute;
+	width:3000px;
+	height:550px;
+	margin: auto;
+	background-image: url(../img/front.png);
+	z-index:-3;
+}
+div#Gingy{
+	position: absolute;
+	width:225px;
+	height:225px;
+	top: 270px;
+	margin: auto;
+	/*background-image: url(../img/1.png);*/
+	z-index:0;
+}
